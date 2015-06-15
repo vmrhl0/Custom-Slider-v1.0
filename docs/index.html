@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Index</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Index</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>CustomSlider</h1><p>This is an implementation of slider plugin. The plugin is capable of executing user defined horizontal sliders such as Simple-Slider, Range-slider, Fixed-Range-Slider and Draggable-range-Slider. It also has tool-tip, label and tick functionalities. This plugin is forked and extended from bootstrap-slider [https://github.com/seiyria/bootstrap-slider authored by Kyle Kemp and Rohit Kalkur].</p>
+<h3>Basic Setup</h3><p>Load the plugin CSS and JavaScript into your web page, after loading jQuery.</p>
+<h3>How to use?</h3><p>Create an input element:</p>
+<pre class="prettyprint source"><code>&lt;input id=&quot;ex1&quot; data-slider-id='ex3Slider' type=&quot;text&quot; data-slider-min=&quot;0&quot; data-slider-max=&quot;20&quot; data-slider-step=&quot;1&quot; data-slider-value=&quot;14&quot;/></code></pre><p>Invoke the plugin constructor:  </p>
+<pre class="prettyprint source"><code>$('#ex1').customSlider({});</code></pre><p>Add custom CSS:</p>
+<pre class="prettyprint source"><code>#ex1Slider .slider-selection {
+background: #5E94F3;
+}
+#ex1Slider .slider-handle {
+background: #33EE1A;
+}
+#ex1Slider .slider-track-high {
+background-color: #B9D5E0;
+}</code></pre><h3>Resources</h3><pre class="prettyprint source"><code>&lt;script src=&quot;../src/js/custom-slider.js&quot;>&lt;/script>
+&lt;link rel=&quot;styleSheet&quot; href=&quot;../src/css/custom-slider.css&quot;></code></pre><h3>Dependency</h3><pre class="prettyprint source"><code>&lt;script src=&quot;../src/lib/jquery.js&quot;>&lt;/script></code></pre><p><strong>Options</strong></p>
+<p>Options can be passed either as a data (data-slider-foo) attribute, or as part of an object in the slider call. The only exception here is the formatter argument - that can not be passed as a data- attribute.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>String</code></td>
+<td>Id for the custom-slider DOM element</td>
+</tr>
+<tr>
+<td>min</td>
+<td><code>Number</code></td>
+<td>The minimum value of slider</td>
+</tr>
+<tr>
+<td>max</td>
+<td><code>Number</code></td>
+<td>The maximum value of slider</td>
+</tr>
+<tr>
+<td>step</td>
+<td><code>Number</code></td>
+<td>The step value of slider</td>
+</tr>
+<tr>
+<td>precision</td>
+<td><code>Number</code></td>
+<td>The precision value of slider</td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>Number, Array</code></td>
+<td>The initial value of slider. It can be a number or an array of 2 numbers depending on slider type</td>
+</tr>
+<tr>
+<td>range</td>
+<td><code>Boolean</code></td>
+<td>If true, creates a Range-Slider</td>
+</tr>
+<tr>
+<td>fixed_range</td>
+<td><code>Boolean</code></td>
+<td>If true, creates a Fixed-Range-Slider. Fixed-Range-Slider is essentially a range slider with its range fixed and can be dragged across the slider track</td>
+</tr>
+<tr>
+<td>fixed_range_value</td>
+<td><code>Number</code></td>
+<td>The value of fixed range. Combined with 'value' decides the initial position of the Fixed-Range-Slider</td>
+</tr>
+<tr>
+<td>draggable_range</td>
+<td><code>Boolean</code></td>
+<td>If true, creates a Draggable-Range-Slider. Draggable-Range-Slider is essentially a range slider with adjustable range and draggable selected range</td>
+</tr>
+<tr>
+<td>selection</td>
+<td><code>String</code></td>
+<td>selection placement. Accepts: 'before', 'after' or 'none'. In case of a range slider, the selection will be placed between the handles</td>
+</tr>
+<tr>
+<td>tooltip</td>
+<td><code>String</code></td>
+<td>whether to show the tooltip on drag, hide the tooltip, or always show the tooltip. Accepts: 'show', 'hide', or 'always'</td>
+</tr>
+<tr>
+<td>tooltip_split</td>
+<td><code>Boolean</code></td>
+<td>if false shows one tooltip, if true,show two tooltip.</td>
+</tr>
+<tr>
+<td>reversed</td>
+<td><code>Boolean</code></td>
+<td>whether or not the slider should be reversed</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td><code>Boolean</code></td>
+<td>indicates if the slider is enabled initially or not</td>
+</tr>
+<tr>
+<td>formatter</td>
+<td><code>function</code></td>
+<td>formatter callback. Returns the value wanted to be displayed in the tooltip</td>
+</tr>
+<tr>
+<td>natural_arrow_keys</td>
+<td><code>Boolean</code></td>
+<td>The default order is used for the arrow keys. By default, the arrow keys are oriented by arrow up/right to the higher slider value and arrow down/left to the lower slider value.</td>
+</tr>
+<tr>
+<td>ticks</td>
+<td><code>Array</code></td>
+<td>Used to define the values of ticks. Tick marks are indicators to denote special values in the range. This option overwrites min and max options</td>
+</tr>
+<tr>
+<td>ticks_positions</td>
+<td><code>Array</code></td>
+<td>Defines the positions of the tick values in percentages. The first value should always be 0, the last value should always be 100 percent</td>
+</tr>
+<tr>
+<td>ticks_labels</td>
+<td><code>Array</code></td>
+<td>Defines the labels below the tick marks. Accepts HTML input</td>
+</tr>
+<tr>
+<td>ticks_snap_bounds</td>
+<td><code>float</code></td>
+<td>Used to define the snap bounds of a tick. Snaps to the tick if value is within these bounds</td>
+</tr>
+<tr>
+<td>focus</td>
+<td><code>Boolean</code></td>
+<td>Focuses on the appropriate slider handle after a value change</td>
+</tr>
+</tbody>
+</table></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="CustomSlider.html">CustomSlider</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Thu May 07 2015 10:05:55 GMT+0530 (IST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

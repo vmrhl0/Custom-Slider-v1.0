@@ -1,0 +1,124 @@
+/*----------- layout css ------------*/
+html,
+body {
+    height: 99%;
+    width: 99%;
+    background: #000000;
+}
+
+.container{
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    background: #FFFFFF;
+    padding: 20px;
+}
+.container > h1 {
+    text-align: center;
+    color: #55A8BD;
+}
+
+.example{
+    position: relative;
+    background: #EAF0F5;
+    padding: 10px;
+    border: solid #F7F7F7 10px;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+
+.example > h3{
+    text-decoration: underline;
+    color: #AAAAAA;
+}
+
+.example-intro{
+    font-size: 15px;
+    padding: 10px 0px;
+
+}
+.slider-container{
+    text-align: center;
+    background: #CCC7C7;
+    padding: 20px;
+    border-radius: 10px;    
+}
+.example-description{
+    margin-top: 15px;
+    padding: 15px;
+    border: solid #8EF1E9 3px;
+    background: #FFF;
+    border-radius: 30px;
+}
+.example-description-heading{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #2AC9C9;
+    padding: 10px 0;
+}
+.example-description-section{
+    font-style: italic;
+    font-family: monospace;
+}
+
+/*--------------------- demo-slider-css -----------*/
+
+#ex1Slider .slider-selection {
+    background: #5E94F3;
+}
+#ex1Slider .slider-handle {
+    background: #33EE1A;
+}
+#ex1Slider .slider-track-high {
+    background-color: #B9D5E0;
+}
+
+#ex2Slider .slider-selection {
+    background: #5E94F3;
+}
+#ex2Slider .slider-handle {
+    background: #33EE1A;
+    border-radius: 0;  
+}
+#ex2Slider .slider-track-high {
+    background-color: #B9D5E0;
+}  
+#ex2Slider .slider-track-low {
+    background-color: #B9D5FF;
+}  
+
+#ex3Slider .slider-selection {
+    background: #5F94F3;
+}
+#ex3Slider .slider-handle {
+    background: #33FF1A;
+}
+#ex3Slider .slider-track-high {
+    background-color: #AAD5E0;
+}
+#ex3Slider .slider-track-low {
+    background-color: #AAD5FF;
+}                        
+
+
+#ex4Slider .slider-selection {
+    background: #7D7B97;;
+}
+#ex4Slider .slider-handle {
+    background: #AAAF1A;
+}
+#ex4Slider .slider-track-high {
+    background-color: #AAA5E0;
+}
+#ex4Slider .slider-track-low {
+    background-color: #AAA5FF;
+}      
+
+
+#ex5Slider .slider-selection {
+    background: #7D7B97;
+}
+#ex5Slider .slider-handle {
+    background: #AAAF1A;
+}

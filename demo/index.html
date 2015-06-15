@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Custom-Slider -Plugin Demo</title>
+        <link rel="styleSheet" href="css/demo.css"></link>
+        <script src="../src/lib/jquery.js"></script>
+        <script src="../src/js/custom-slider.js"></script>
+        <link rel="styleSheet" href="../src/css/custom-slider.css"></link>
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Examples of custom-slider</h1>
+            <div class="example">
+                <h3>Simple Slider</h3> 
+                <div class="example-intro">
+                    Basic example of custom-slider with customized color patterns.
+                </div>
+                <div class="slider-container">
+                    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>        
+                </div>
+                <div class="example-description">
+                    <code>
+                        <div class="example-description-heading">HTML</div>
+                        <div class="example-description-section">
+                            &ltinput id="ex1" data-slider-id='ex3Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/&gt
+                        </div>
+                        <div class="example-description-heading">JavaScript</div>
+                        <div class="example-description-section">
+                            <pre>
+                            $('#ex1').customSlider({});
+                            </pre>
+                        </div>
+                        <div class="example-description-heading">CSS</div>
+                        <div class="example-description-section">
+                            <pre>
+                            #ex1Slider .slider-selection {
+                                background: #5E94F3;
+                            }
+                            #ex1Slider .slider-handle {
+                                background: #33EE1A;
+                            }
+                            #ex1Slider .slider-track-high {
+                                background-color: #B9D5E0;
+                            }                           
+                            </pre>
+                        </div>
+                    </code>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>Range Slider</h3> 
+                <div class="example-intro">
+                    Basic example of a Range-Slider with customized color and handle shape.
+                </div>
+                <div class="slider-container">
+                    <input id="ex2" data-slider-id='ex2Slider' type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-range='true'  data-slider-value="20"/>
+                </div>
+                <div class="example-description">
+                    <code>
+                        <div class="example-description-heading">HTML</div>
+                        <div class="example-description-section">
+                            &ltinput id="ex2" data-slider-id='ex2Slider' type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-range='true'  data-slider-value="20"/&gt
+                        </div>
+                        <div class="example-description-heading">JavaScript</div>
+                        <div class="example-description-section">
+                            <pre>
+                            $('#ex2').customSlider({});
+                            </pre>
+                        </div>
+                        <div class="example-description-heading">CSS</div>
+                        <div class="example-description-section">
+                            <pre>
+                            #ex2Slider .slider-selection {
+                                background: #5E94F3;
+                            }
+                            #ex2Slider .slider-handle {
+                                background: #33EE1A;
+                                border-radius: 0;   
+                            }
+                            #ex2Slider .slider-track-high {
+                                background-color: #B9D5E0;
+                            }
+                            #ex2Slider .slider-track-low {
+                                background-color: #B9D5FF;
+                            }                            
+                            </pre>
+                        </div>
+                    </code>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>Fixed Range Slider</h3>
+                <div class="example-intro">
+                    Basic example of a Fixed-Range-Slider with customized color and handle shape.
+                </div>
+                <div class="slider-container">
+                    <input id="ex3" data-slider-id='ex3Slider' type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-range='false' data-slider-fixed-range='true' data-slider-value="20" data-slider-fixed-range-value="50"/>
+                </div>
+                <div class="example-description">
+                    <code>
+                        <div class="example-description-heading">HTML</div>
+                        <div class="example-description-section">
+                            &ltinput id="ex3" data-slider-id='ex3Slider' type="text" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-range='false' data-slider-fixed-range='true' data-slider-value="20" data-slider-fixed-range-value="50"/&gt
+                        </div>
+                        <div class="example-description-heading">JavaScript</div>
+                        <div class="example-description-section">
+                            <pre>
+                            $('#ex3').customSlider({});
+                            </pre>
+                        </div>
+                        <div class="example-description-heading">CSS</div>
+                        <div class="example-description-section">
+                            <pre>
+                            #ex3Slider .slider-selection {
+                                background: #5F94F3;
+                            }
+                            #ex3Slider .slider-handle {
+                                background: #33FF1A;
+                            }
+                            #ex3Slider .slider-track-high {
+                                background-color: #AAD5E0;
+                            }
+                            #ex3Slider .slider-track-low {
+                                background-color: #AAD5FF;
+                            }                            
+                            </pre>
+                        </div>
+                    </code>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>Draggable Range Slider</h3>
+                <div class="example-intro">
+                    Basic example of a Draggable-Range-Slider with customized color and handle shape.
+                </div>
+                <div class="slider-container">
+                    <input id="ex4" data-slider-id='ex4Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="20" data-slider-range='true' data-slider-draggable-range='true' data-slider-fixed-range='false'/>
+                </div>
+                <div class="example-description">
+                    <code>
+                        <div class="example-description-heading">HTML</div>
+                        <div class="example-description-section">
+                            &ltinput id="ex4" data-slider-id='ex4Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="20" data-slider-range='true' data-slider-draggable-range='true' data-slider-fixed-range='false'/&gt
+                        </div>
+                        <div class="example-description-heading">JavaScript</div>
+                        <div class="example-description-section">
+                            <pre>
+                            $('#ex4').customSlider({value:[20,60]});
+                            </pre>
+                        </div>
+                        <div class="example-description-heading">CSS</div>
+                        <div class="example-description-section">
+                            <pre>
+                            #ex4Slider .slider-selection {
+                                background: #7D7B97;
+                            }
+                            #ex4Slider .slider-handle {
+                                background: #AAAF1A;
+                            }
+                            #ex4Slider .slider-track-high {
+                                background-color: #AAA5E0;
+                            }
+                            #ex4Slider .slider-track-low {
+                                background-color: #AAA5FF;
+                            }                            
+                            </pre>
+                        </div>
+                    </code>
+                </div>
+            </div>
+
+            <div class="example">
+                <h3>Ticks and Labels</h3>
+                <div class="example-intro">
+                    Example of usage of slider with Ticks, Labels and customized color and handle shape.
+                </div>
+                <div class="slider-container">
+                    <input id="ex5" type="text" data-slider-id='ex5Slider' data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels="['$0', '$100', '$200', '$300', '$400']"/>
+                </div>
+                <div class="example-description">
+                    <code>
+                        <div class="example-description-heading">HTML</div>
+                        <div class="example-description-section">
+                            &ltinput id="ex5" type="text" data-slider-id='ex5Slider' data-slider-ticks="[0, 100, 200, 300, 400]" data-slider-ticks-snap-bounds="30" data-slider-ticks-labels="['$0', '$100', '$200', '$300', '$400']"/&gt
+                        </div>
+                        <div class="example-description-heading">JavaScript</div>
+                        <div class="example-description-section">
+                            <pre>
+                            $("#ex5").customSlider({
+                                ticks: [0, 100, 200, 300, 400],
+                                ticks_labels: ['$0', '$100', '$200', '$300', '$400'],
+                                ticks_snap_bounds: 30
+                            });                            
+                            </pre>
+                        </div>
+                        <div class="example-description-heading">CSS</div>
+                        <div class="example-description-section">
+                            <pre>
+                            #ex5Slider .slider-selection {
+                                background: #7D7B97;
+                            }
+                            #ex5Slider .slider-handle {
+                                background: #AAAF1A;
+                            }
+                            </pre>
+                        </div>
+                    </code>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
